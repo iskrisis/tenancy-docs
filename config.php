@@ -17,7 +17,7 @@ return [
     'prettyUrls' => true,
 
     'version' => function ($page) {
-        return explode('/', $page->getPath())[1];
+        return explode('/', $page->getPath())[2];
     },
 
     'link' => function ($page, $path) {

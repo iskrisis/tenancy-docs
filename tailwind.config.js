@@ -1,6 +1,6 @@
 module.exports = {
   purge: [
-    './source/**/*.html', './source/**/*.md', './source/**/*.js', './source/**/*.php'
+    './source/**/*.md', './source/**/*.php', './source/*.php'
   ],
   prefix: '',
   important: false,
@@ -230,7 +230,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'Nunito',
+        'Inter',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',

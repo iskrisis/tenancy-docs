@@ -12,7 +12,7 @@ mix.js('source/_assets/js/main.js', 'js')
         tailwindcss('./tailwind.config.js')
     ])
     .jigsaw({
-        watch: ['config.php', 'source/assets/**/*.md', 'source/**/*.php', 'source/**/*.css'],
+        watch: ['config.php','navigation.php', 'source/**/*.md', 'source/**/*.php', 'source/_assets/css/**/*.css'],
     })
     .options({
         processCssUrls: false

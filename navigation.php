@@ -104,7 +104,7 @@ return [
             ],
         ],
         'Integrations' => [
-            'url'      => 'integrations',
+            'url'      => 'docs/integrations',
             'children' => [
                 'Spatie Packages' => 'spatie',
                 'Horizon'   => 'horizon',
@@ -177,7 +177,7 @@ return [
             ],
         ],
         'Integrations' => [
-            'url'      => 'integrations',
+            'url'      => 'docs/integrations',
             'children' => [
                 'Spatie Packages' => 'spatie',
                 'Horizon'   => 'horizon',

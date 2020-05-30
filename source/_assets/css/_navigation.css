@@ -1,34 +1,13 @@
 .nav-menu {
-    @apply .-mt-12;
-    @apply .-mx-8;
-    @apply .bg-gray-200;
-    @apply .mb-8;
-    @apply .pb-4;
-    @apply .pt-8;
-    @apply .px-4;
-    @apply .shadow;
-    @apply .w-auto;
+    @apply w-auto px-4 pt-8 pb-4 mb-8 -mx-8 -mt-12 bg-gray-200 shadow;
 
     @screen lg {
-        @apply .-mx-4;
-        @apply .bg-transparent;
-        @apply .block;
-        @apply .border-b-0;
-        @apply .mt-1;
-        @apply .pl-0;
-        @apply .pr-4;
-        @apply .pt-0;
-        @apply .shadow-none;
-        @apply .w-1/4;
+        @apply block w-1/4 pt-0 pl-0 pr-4 mt-1 -mx-4 bg-transparent border-b-0 shadow-none;
     }
 }
 
 .nav-menu__item {
-    @apply .block;
+    @apply block mt-0 mb-3 text-sm text-gray-900 no-underline;
+
     /* @apply .list-reset; ??? */
-    @apply .no-underline;
-    @apply .mb-3;
-    @apply .mt-0;
-    @apply .text-gray-900;
-    @apply .text-sm;
 }

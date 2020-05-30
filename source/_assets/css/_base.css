@@ -3,43 +3,29 @@ body {
 }
 
 a {
-    @apply .font-semibold;
-    @apply .no-underline;
-    @apply .text-indigo-700;
+    @apply font-semibold text-indigo-700 no-underline;
 
     &:hover {
-        @apply .text-indigo-500;
+        @apply text-indigo-500;
     }
 }
 
 blockquote {
-    @apply border-blue-100;
-    @apply .border-l-4;
-    @apply .font-normal;
-    @apply .italic;
-    @apply .my-8;
-    @apply .pl-6;
-    @apply .text-gray-800;
-    @apply .text-lg;
+    @apply pl-6 my-8 text-lg italic font-normal text-gray-800 border-l-4 border-blue-100;
 }
 
 code {
-    @apply .bg-gray-200;
-    @apply .px-2;
-    @apply .py-px;
-    @apply .rounded;
-    @apply .text-sm;
+    @apply px-2 py-px text-sm bg-gray-200 rounded;
 }
 
 code.hljs {
-    @apply .bg-transparent;
-    @apply .p-0;
+    @apply p-0 bg-transparent;
 
     .hljs-comment,
     .hljs-keyword,
     .hljs-meta {
-        @apply .font-normal;
-        /* @apply .roman; */
+        @apply font-normal;
+        /* @apply roman; */
     }
 }
 
@@ -49,82 +35,61 @@ h3,
 h4,
 h5,
 h6 {
-    @apply .leading-tight;
-    @apply .mb-4;
-    @apply .mt-8;
-    @apply .text-black;
+    @apply mt-8 mb-4 leading-tight text-black;
 
     &:first-child {
-        @apply .mt-0;
+        @apply mt-0;
     }
 }
 
 h1 {
-    @apply .font-extrabold;
-    @apply .text-5xl;
+    @apply text-5xl font-extrabold;
 }
 
 h2 {
-    @apply .font-bold;
-    @apply .text-4xl;
+    @apply text-4xl font-bold;
 }
 
 h3 {
-    @apply .font-bold;
-    @apply .text-3xl;
+    @apply text-3xl font-bold;
 }
 
 h4 {
-    @apply .font-normal;
-    @apply .text-2xl;
+    @apply text-2xl font-normal;
 }
 
 h5 {
-    @apply .font-normal;
-    @apply .text-xl;
+    @apply text-xl font-normal;
 }
 
 h6 {
-    @apply .font-light;
-    @apply .text-lg;
+    @apply text-lg font-light;
 }
 
 hr {
-    @apply .border-b;
-    @apply .border-blue-200;
-    @apply .my-12;
-    @apply .rounded-full;
+    @apply my-12 border-b border-blue-200 rounded-full;
 }
 
 li {
     ul,
     ol {
-        @apply .my-0;
+        @apply my-0;
     }
 }
 
 ol,
 ul {
-    @apply .my-4;
+    @apply my-4;
 }
 
 p {
-    @apply .my-6;
+    @apply my-6;
 }
 
 pre {
-    @apply .bg-gray-200;
-    @apply .leading-loose;
-    @apply .my-6;
-    @apply .overflow-x-auto;
-    @apply .p-4;
-    @apply .rounded;
-    @apply .shadow;
-    @apply .text-base;
+    @apply p-4 my-6 overflow-x-auto text-base leading-loose bg-gray-200 rounded shadow;
 
     code {
-        @apply .bg-transparent;
-        @apply .block;
-        @apply .p-0;
+        @apply block p-0 bg-transparent;
     }
 }

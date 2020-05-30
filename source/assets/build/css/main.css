@@ -415,7 +415,7 @@ ul {
  */
 
 html {
-  font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -987,10 +987,10 @@ body {
 
 a {
   font-weight: 600;
-  text-decoration: none;
   --text-opacity: 1;
   color: #4c51bf;
-  color: rgba(76, 81, 191, var(--text-opacity))
+  color: rgba(76, 81, 191, var(--text-opacity));
+  text-decoration: none
 }
 
 a:hover {
@@ -1000,43 +1000,43 @@ a:hover {
 }
 
 blockquote {
-  --border-opacity: 1;
-  border-color: #ebf8ff;
-  border-color: rgba(235, 248, 255, var(--border-opacity));
-  border-left-width: 4px;
-  font-weight: 400;
-  font-style: italic;
+  padding-left: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  padding-left: 1.5rem;
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 400;
   --text-opacity: 1;
   color: #2d3748;
   color: rgba(45, 55, 72, var(--text-opacity));
-  font-size: 1.125rem;
+  border-left-width: 4px;
+  --border-opacity: 1;
+  border-color: #ebf8ff;
+  border-color: rgba(235, 248, 255, var(--border-opacity));
 }
 
 code {
-  --bg-opacity: 1;
-  background-color: #edf2f7;
-  background-color: rgba(237, 242, 247, var(--bg-opacity));
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 1px;
   padding-bottom: 1px;
-  border-radius: 0.25rem;
   font-size: 0.875rem;
+  --bg-opacity: 1;
+  background-color: #edf2f7;
+  background-color: rgba(237, 242, 247, var(--bg-opacity));
+  border-radius: 0.25rem;
 }
 
 code.hljs {
-  background-color: transparent;
   padding: 0;
+  background-color: transparent;
 }
 
 code.hljs .hljs-comment,
     code.hljs .hljs-keyword,
     code.hljs .hljs-meta {
   font-weight: 400;
-  /* @apply .roman; */
+  /* @apply roman; */
 }
 
 h1,
@@ -1045,9 +1045,9 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.25;
-  margin-bottom: 1rem;
   margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.25;
   --text-opacity: 1;
   color: #000;
   color: rgba(0, 0, 0, var(--text-opacity))
@@ -1058,42 +1058,42 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, 
 }
 
 h1 {
-  font-weight: 800;
   font-size: 3rem;
+  font-weight: 800;
 }
 
 h2 {
-  font-weight: 700;
   font-size: 2.25rem;
+  font-weight: 700;
 }
 
 h3 {
-  font-weight: 700;
   font-size: 1.875rem;
+  font-weight: 700;
 }
 
 h4 {
-  font-weight: 400;
   font-size: 1.5rem;
+  font-weight: 400;
 }
 
 h5 {
-  font-weight: 400;
   font-size: 1.25rem;
+  font-weight: 400;
 }
 
 h6 {
-  font-weight: 300;
   font-size: 1.125rem;
+  font-weight: 300;
 }
 
 hr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   border-bottom-width: 1px;
   --border-opacity: 1;
   border-color: #bee3f8;
   border-color: rgba(190, 227, 248, var(--border-opacity));
-  margin-top: 3rem;
-  margin-bottom: 3rem;
   border-radius: 9999px;
 }
 
@@ -1115,74 +1115,74 @@ p {
 }
 
 pre {
-  --bg-opacity: 1;
-  background-color: #edf2f7;
-  background-color: rgba(237, 242, 247, var(--bg-opacity));
-  line-height: 2;
+  padding: 1rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   overflow-x: auto;
-  padding: 1rem;
-  border-radius: 0.25rem;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   font-size: 1rem;
-}
-
-pre code {
-  background-color: transparent;
-  display: block;
-  padding: 0;
-}
-
-.nav-menu {
-  margin-top: -3rem;
-  margin-left: -2rem;
-  margin-right: -2rem;
+  line-height: 2;
   --bg-opacity: 1;
   background-color: #edf2f7;
   background-color: rgba(237, 242, 247, var(--bg-opacity));
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  padding-top: 2rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+pre code {
+  display: block;
+  padding: 0;
+  background-color: transparent;
+}
+
+.nav-menu {
+  width: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  margin-top: -3rem;
+  --bg-opacity: 1;
+  background-color: #edf2f7;
+  background-color: rgba(237, 242, 247, var(--bg-opacity));
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  width: auto;
   @media (min-width: 1024px) {
+    display: block;
+
+    width: 25%;
+
+    padding-top: 0;
+
+    padding-left: 0;
+
+    padding-right: 1rem;
+
+    margin-top: 0.25rem;
+
     margin-left: -1rem;
 
     margin-right: -1rem;
 
     background-color: transparent;
 
-    display: block;
-
     border-bottom-width: 0;
 
-    margin-top: 0.25rem;
-
-    padding-left: 0;
-
-    padding-right: 1rem;
-
-    padding-top: 0;
-
     box-shadow: none;
-
-    width: 25%;
   }
 }
 
 .nav-menu__item {
   display: block;
-  /* @apply .list-reset; ??? */
-  text-decoration: none;
-  margin-bottom: 0.75rem;
   margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
   --text-opacity: 1;
   color: #1a202c;
   color: rgba(26, 32, 44, var(--text-opacity));
-  font-size: 0.875rem;
+  text-decoration: none;
+  /* @apply .list-reset; ??? */
 }
 
 .docsearch-input {
@@ -1204,30 +1204,30 @@ pre code {
 
 .docsearch-input__wrapper {
   position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 2rem;
   --bg-opacity: 1;
   background-color: #fff;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
-  margin-top: 2rem;
-  left: 0;
-  top: 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  width: 100%;
-  z-index: 10;
   @media (min-width: 768px) {
-    margin-top: 0;
+    position: relative;
 
     padding-left: 0;
 
     padding-right: 0;
 
-    position: relative;
+    margin-top: 0;
   }
 }
 
 .algolia-autocomplete {
-  text-align: right;
   width: 100%;
+  text-align: right;
 }
 
 .algolia-autocomplete .ds-dropdown-menu {
@@ -1256,9 +1256,9 @@ pre code {
 .algolia-autocomplete .ds-dropdown-menu .algolia-docsearch-suggestion .algolia-docsearch-suggestion--subcategory-column {
   display: none;
   @media (min-width: 768px) {
-    width: 33.333333%;
-
     display: inline-block;
+
+    width: 33.333333%;
   }
 }
 
@@ -6747,7 +6747,7 @@ pre code {
 }
 
 .font-sans {
-  font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-serif {
@@ -24031,7 +24031,7 @@ pre code {
   }
 
   .sm\:font-sans {
-    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .sm\:font-serif {
@@ -41316,7 +41316,7 @@ pre code {
   }
 
   .md\:font-sans {
-    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .md\:font-serif {
@@ -58601,7 +58601,7 @@ pre code {
   }
 
   .lg\:font-sans {
-    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .lg\:font-serif {
@@ -75886,7 +75886,7 @@ pre code {
   }
 
   .xl\:font-sans {
-    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .xl\:font-serif {
@@ -93171,7 +93171,7 @@ pre code {
   }
 
   .\32xl\:font-sans {
-    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .\32xl\:font-serif {
