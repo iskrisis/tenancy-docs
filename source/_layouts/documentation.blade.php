@@ -1,13 +1,15 @@
 @extends('_layouts.master')
 
-@section('nav-toggle')
+{{-- @section('nav-toggle')
     @include('_nav.menu-toggle')
+@endsection --}}
+
+@section('header')
+    @include('_partials.header-docs-test', [ 'page' => $page ])
 @endsection
 
 @section('body')
-
 <section class="container max-w-4xl px-6 py-4 mx-auto md:px-8">
-
     <div class="flex flex-col lg:flex-row">
         <nav id="js-nav-menu" class="hidden nav-menu lg:block">
             @include('_nav.menu', ['items' => $page->navigation[$page->version()]])
